@@ -1,0 +1,29 @@
+*{
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(27, 27, 50);
+  text-align: center;
+  color: #fff;
+}
+
+input{
+  padding: 8px;
+  
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(59, 59, 79);
+  border: 3px solid white;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+p{
+  text-align: center;
+}
