@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Pokemon Search</h1>
-    <input id="search-input" required />
-    <button id="search-button">Search</button>
 
-    <div id="sprite-container"></div>
-    <p>Name:</p>
-    <p id="pokemon-name"></p>
-    <p>ID:</p>
-    <p id="pokemon-id"></p>
-    <p>Weight:</p>
-    <p id="weight"></p>
-    <p>Height:</p>
-    <p id="height"></p>
-    <p>Pokemon Type:</p>
-    <p id="types"></p>
-    <p>HP:</p>
-    <p id="hp"></p>
-    <p>Attack:<p>
-    <p id="attack"></p>
-    <p>Defense:</p>
-    <p id="defense">Defense</p>
-    <p>Sp. Attack:
-    <p id="special-attack"></p>
-    <p>Sp. Defense:
-    <p id="special-defense"></p>
-    <p>Speed:</p>
-    <p id="speed"></p>
+  <div class="pokedex-frame">
     
+    <div class="pokedex-left">
+      <div class="pokedex-light"></div>
+      <h1>Pokédex</h1>
 
-    <script src="script.js"></script>
+      <div class="search-panel">
+        <input id="search-input" placeholder="Enter Pokémon" required />
+        <button id="search-button">Search</button>
+      </div>
+
+      <div id="sprite-container"></div>
+    </div>
+
+    <div class="pokedex-right">
+      <div class="info-panel">
+        <div class="info-row"><p>Name:</p><p id="pokemon-name"></p></div>
+        <div class="info-row"><p>ID:</p><p id="pokemon-id"></p></div>
+        <div class="info-row"><p>Weight:</p><p id="weight"></p></div>
+        <div class="info-row"><p>Height:</p><p id="height"></p></div>
+        <div class="info-row"><p>Pokemon Type:</p><p id="types"></p></div>
+      </div>
+
+      <div class="stats-panel">
+        <div class="stat"><p>HP:</p><p id="hp"></p></div>
+        <div class="stat"><p>Attack:</p><p id="attack"></p></div>
+        <div class="stat"><p>Defense:</p><p id="defense"></p></div>
+        <div class="stat"><p>Sp. Attack:</p><p id="special-attack"></p></div>
+        <div class="stat"><p>Sp. Defense:</p><p id="special-defense"></p></div>
+        <div class="stat"><p>Speed:</p><p id="speed"></p></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
